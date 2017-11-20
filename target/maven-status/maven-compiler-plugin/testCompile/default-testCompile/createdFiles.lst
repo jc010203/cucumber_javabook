@@ -1,4 +1,6 @@
-nicebank/NiceBankTest.class
-nicebank/Steps$KnowsTheDomain.class
 Transforms/MoneyConverter.class
-nicebank/Steps.class
+nicebank/CashSlotSteps.class
+nicebank/AccountSteps.class
+nicebank/NiceBankTest.class
+nicebank/TellerSteps.class
+support/KnowsTheDomain.class

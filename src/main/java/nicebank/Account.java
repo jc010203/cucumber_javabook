@@ -11,6 +11,10 @@ public class Account {
         balance = balance.add(amount);
     }
 
+    public void withDraw(Money amount) {
+        balance = balance.minus(amount);
+    }
+
     public Money getBalance() {
         return balance;
     }

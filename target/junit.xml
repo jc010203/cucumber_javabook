@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.113524">
-<testcase classname="cash withdrawal" name="successful withdrawal from account in credit" time="0.113524">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.212985">
+<testcase classname="cash withdrawal" name="successful withdrawal from account in credit" time="0.212985">
 <system-out><![CDATA[Given I have deposited $100.00 in my account................................passed
 When I withdraw $20.........................................................passed
 Then $20 should be dispensed................................................passed
