@@ -1,6 +1,6 @@
 Feature: cash withdrawal
 
   Scenario: successful withdrawal from account in credit
-    Given I have deposited $"100.00" in my account
+    Given I have deposited $100.00 in my account
     When I withdraw $20
     Then $20 should be dispensed
