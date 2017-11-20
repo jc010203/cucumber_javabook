@@ -1,4 +1,5 @@
 nicebank/NiceBankTest.class
+nicebank/Steps$Teller.class
 nicebank/Steps$Account.class
 Transforms/MoneyConverter.class
 nicebank/Steps.class
