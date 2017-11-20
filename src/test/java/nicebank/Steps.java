@@ -12,7 +12,7 @@ import org.junit.Assert;
 public class Steps {
 
     class Account {
-        private Money balance = new Money(0,0);
+        private Money balance = new Money(0, 0);
 
         public void deposit(Money amount) {
             balance = balance.add(amount);
@@ -23,14 +23,15 @@ public class Steps {
         }
     }
 
-    @Given("^I have deposited \\$(\\d+)\\.(\\d+) in my account$")
-    public void iHaveDeposited$InMyAccount(int dollars, int cents) throws Throwable {
+    @Given("^I have deposited \\$\"(.*?)\" in my account$")
+    public void i_have_deposited_$_in_my_account(Money amount) throws Throwable {
         Account myAccount = new Account();
-        Money amount = new Money(dollars, cents);
         myAccount.deposit(amount);
 
-        Assert.assertEquals(amount, myAccount.getBalance());
+        Assert.assertEquals("Incorrect balance -",
+                amount, myAccount.getBalance());
     }
+
 
     @When("^I withdraw \\$(\\d+)$")
     public void i_withdraw_$(int arg1) throws Throwable {

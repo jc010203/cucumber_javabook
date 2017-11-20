@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="0.152836">
-<testcase classname="cash withdrawal" name="successful withdrawal from account in credit" time="0.152836">
-<skipped><![CDATA[Given I have deposited $100.00 in my account................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="0.146813">
+<testcase classname="cash withdrawal" name="successful withdrawal from account in credit" time="0.146813">
+<skipped><![CDATA[Given I have deposited $"100.00" in my account..............................passed
 When I withdraw $20.........................................................pending
 Then $20 should be dispensed................................................skipped
 ]]></skipped>
