@@ -58,12 +58,11 @@ public class Steps {
 
     @When("^I withdraw \\$(\\d+)$")
     public void i_withdraw_$(int amount) throws Throwable {
-
+        helper.getCashSlot().dispense(amount);
     }
 
     @Then("^\\$(\\d+) should be dispensed$")
     public void $_should_be_dispensed(int dollars) throws Throwable {
-        helper.getCashSlot().dispense(dollars);
         Assert.assertEquals("Incorrect amount dispensed - ", dollars, helper.getCashSlot().getContents());
     }
 }
