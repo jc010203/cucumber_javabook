@@ -2,6 +2,7 @@ package support;
 
 import nicebank.Account;
 import nicebank.CashSlot;
+import nicebank.AutomatedTeller;
 import nicebank.Teller;
 
 /**
@@ -11,7 +12,7 @@ public class KnowsTheDomain {
 
     private Account myAccount;
     private CashSlot cashSlot;
-    private Teller teller;
+    private Teller automatedTeller;
 
 
     public Account getMyAccount() {
@@ -28,10 +29,10 @@ public class KnowsTheDomain {
         return cashSlot;
     }
 
-    public Teller getTeller() {
-        if (null == teller) {
-            teller = new Teller(getCashSlot());
+    public Teller getAutomatedTeller() {
+        if (null == automatedTeller) {
+            automatedTeller = new AutomatedTeller(getCashSlot());
         }
-        return teller;
+        return automatedTeller;
     }
 }

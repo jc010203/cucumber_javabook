@@ -64,8 +64,8 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase classname="Scenario: successful withdrawal from account in credit" name="Given I have deposited $100.00 in my account" time="0.001"/>
-  <testcase classname="Scenario: successful withdrawal from account in credit" name="When I withdraw $20.00" time="0.001"/>
-  <testcase classname="Scenario: successful withdrawal from account in credit" name="Then $20.00 should be dispensed" time="0.002"/>
+  <testcase classname="Scenario: successful withdrawal from account in credit" name="When I withdraw $20.00" time="0.002"/>
+  <testcase classname="Scenario: successful withdrawal from account in credit" name="Then $20.00 should be dispensed" time="0"/>
   <testcase classname="Scenario: successful withdrawal from account in credit" name="And the balance of my account should be $80.00" time="0"/>
-  <testcase classname="Scenario: successful withdrawal from account in credit" name="Scenario: successful withdrawal from account in credit" time="0"/>
+  <testcase classname="Scenario: successful withdrawal from account in credit" name="Scenario: successful withdrawal from account in credit" time="0.001"/>
 </testsuite>
