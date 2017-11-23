@@ -8,6 +8,8 @@
  ***/
 package nicebank;
 
+import Transforms.MoneyConverter;
+import cucumber.api.Transform;
 import cucumber.api.java.en.*;
 
 import support.KnowsTheDomain;
@@ -20,8 +22,8 @@ public class TellerSteps {
         this.helper = helper;
     }
 
-    @When("^I withdraw \\$(\\d+)$")
-    public void iWithdraw$(int amount) throws Throwable {
+    @When("^I withdraw (\\$\\d+\\.\\d+)$")
+    public void iWithdraw$(@Transform(MoneyConverter.class) Money amount) throws Throwable {
         helper.getTeller().withdrawFrom(helper.getMyAccount(), amount);
     }
 }

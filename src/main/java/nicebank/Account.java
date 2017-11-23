@@ -7,11 +7,11 @@ public class Account {
 
     private Money balance = new Money(0, 0);
 
-    public void deposit(Money amount) {
+    public void credit(Money amount) {
         balance = balance.add(amount);
     }
 
-    public void withDraw(Money amount) {
+    public void debit(Money amount) {
         balance = balance.minus(amount);
     }
 

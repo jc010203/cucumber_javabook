@@ -5,13 +5,13 @@ package nicebank;
  */
 public class CashSlot {
 
-    private int contents;
+    private Money contents;
 
-    public int getContents() {
+    public Money getContents() {
         return contents;
     }
 
-    public void dispense(int dollars) {
+    public void dispense(Money dollars) {
         contents = dollars;
     }
 }

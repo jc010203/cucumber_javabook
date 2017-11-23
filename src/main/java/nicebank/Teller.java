@@ -11,6 +11,8 @@ public class Teller {
         this.cashSlot = cashSlot;
     }
 
-    public void withdrawFrom(Account account, int dollars) {
+    public void withdrawFrom(Account account, Money amount) {
+        account.debit(amount);
+        cashSlot.dispense(amount);
     }
 }

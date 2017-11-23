@@ -8,6 +8,7 @@
  ***/
 package nicebank;
 
+import cucumber.api.Transform;
 import cucumber.api.java.en.*;
 
 import org.junit.*;
@@ -24,10 +25,10 @@ public class CashSlotSteps {
         this.helper = helper;
     }
 
-    @Given("^\\$(\\d+) should be dispensed$")
-    public void $ShouldBeDispensed(int dollars) throws Throwable {
-        helper.getCashSlot().dispense(dollars);
-        Assert.assertEquals("Incorrect amount dispensed -", dollars,
+    @Given("^(\\$\\d+\\.\\d+) should be dispensed$")
+    public void $ShouldBeDispensed(@Transform(MoneyConverter.class) Money amount) throws Throwable {
+        helper.getCashSlot().dispense(amount);
+        Assert.assertEquals("Incorrect amount dispensed -", amount,
                 helper.getCashSlot().getContents());
     }
 }
