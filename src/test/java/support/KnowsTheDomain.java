@@ -12,7 +12,7 @@ public class KnowsTheDomain {
 
     private Account myAccount;
     private CashSlot cashSlot;
-    private Teller automatedTeller;
+    private Teller teller;
 
 
     public Account getMyAccount() {
@@ -30,9 +30,9 @@ public class KnowsTheDomain {
     }
 
     public Teller getAutomatedTeller() {
-        if (null == automatedTeller) {
-            automatedTeller = new AutomatedTeller(getCashSlot());
+        if (null == teller) {
+            teller = new AtmUserInterface();
         }
-        return automatedTeller;
+        return teller;
     }
 }

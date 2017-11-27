@@ -11,6 +11,11 @@ public class Money {
     private final int dollars;
     private final int cents;
 
+    public Money(){
+        this.dollars = 0;
+        this.cents = 0;
+    }
+
     public Money(int dollars, int cents) {
         this.dollars = dollars;
         this.cents = cents;

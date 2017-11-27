@@ -5,7 +5,7 @@ package nicebank;
  */
 public class Account {
 
-    private Money balance = new Money(0, 0);
+    private Money balance = new Money();
 
     public void credit(Money amount) {
         balance = balance.add(amount);

@@ -1,5 +1,6 @@
 Transforms/MoneyConverter.class
 nicebank/CashSlotSteps.class
+support/AtmUserInterface.class
 nicebank/AccountSteps.class
 nicebank/NiceBankTest.class
 nicebank/TellerSteps.class

@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.132312">
-<testcase classname="cash withdrawal" name="successful withdrawal from account in credit" time="0.132312">
-<system-out><![CDATA[Given I have deposited $100.00 in my account................................passed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.164085">
+<testcase classname="cash withdrawal" name="successful withdrawal from account in credit" time="0.164085">
+<failure message="java.lang.AssertionError: Incorrect account balance - expected:&lt;nicebank.Money@6b09fb41&gt; but was:&lt;nicebank.Money@624ea235&gt;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#10;&#9;at nicebank.AccountSteps.theBalanceOfMyAccountShouldBe$(AccountSteps.java:36)&#10;&#9;at ✽.And the balance of my account should be $80.00(nicebank/cash_withdrawal.feature:7)&#10;"><![CDATA[Given I have deposited $100.00 in my account................................passed
 When I withdraw $20.00......................................................passed
 Then $20.00 should be dispensed.............................................passed
-And the balance of my account should be $80.00..............................passed
-]]></system-out>
+And the balance of my account should be $80.00..............................failed
+
+StackTrace:
+java.lang.AssertionError: Incorrect account balance - expected:<nicebank.Money@6b09fb41> but was:<nicebank.Money@624ea235>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at nicebank.AccountSteps.theBalanceOfMyAccountShouldBe$(AccountSteps.java:36)
+	at ✽.And the balance of my account should be $80.00(nicebank/cash_withdrawal.feature:7)
+]]></failure>
 </testcase>
 </testsuite>
