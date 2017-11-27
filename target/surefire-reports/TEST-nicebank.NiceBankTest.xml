@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -67,21 +67,21 @@
   <testcase classname="Scenario: successful withdrawal from account in credit" name="When I withdraw $20.00" time="0"/>
   <testcase classname="Scenario: successful withdrawal from account in credit" name="Then $20.00 should be dispensed" time="0"/>
   <testcase classname="Scenario: successful withdrawal from account in credit" name="And the balance of my account should be $80.00" time="0.003">
-    <failure message="Incorrect account balance - expected:&lt;nicebank.Money@6b09fb41&gt; but was:&lt;nicebank.Money@624ea235&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Incorrect account balance - expected:&lt;nicebank.Money@6b09fb41&gt; but was:&lt;nicebank.Money@624ea235&gt;
+    <failure message="Incorrect account balance - expected:&lt;nicebank.Money@41c07648&gt; but was:&lt;nicebank.Money@1fe8d51b&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Incorrect account balance - expected:&lt;nicebank.Money@41c07648&gt; but was:&lt;nicebank.Money@1fe8d51b&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:743)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at nicebank.AccountSteps.theBalanceOfMyAccountShouldBe$(AccountSteps.java:36)
-	at ✽.And the balance of my account should be $80.00(nicebank/cash_withdrawal.feature:7)
+	at ✽.And the balance of my account should be $80.00(nicebank/cash_withdrawal.feature:8)
 </failure>
   </testcase>
   <testcase classname="Scenario: successful withdrawal from account in credit" name="Scenario: successful withdrawal from account in credit" time="0.004">
-    <failure message="Incorrect account balance - expected:&lt;nicebank.Money@6b09fb41&gt; but was:&lt;nicebank.Money@624ea235&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Incorrect account balance - expected:&lt;nicebank.Money@6b09fb41&gt; but was:&lt;nicebank.Money@624ea235&gt;
+    <failure message="Incorrect account balance - expected:&lt;nicebank.Money@41c07648&gt; but was:&lt;nicebank.Money@1fe8d51b&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Incorrect account balance - expected:&lt;nicebank.Money@41c07648&gt; but was:&lt;nicebank.Money@1fe8d51b&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:743)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at nicebank.AccountSteps.theBalanceOfMyAccountShouldBe$(AccountSteps.java:36)
-	at ✽.And the balance of my account should be $80.00(nicebank/cash_withdrawal.feature:7)
+	at ✽.And the balance of my account should be $80.00(nicebank/cash_withdrawal.feature:8)
 </failure>
   </testcase>
 </testsuite>

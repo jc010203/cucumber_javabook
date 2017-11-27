@@ -10,6 +10,6 @@ import org.junit.runner.RunWith;
  */
 
 @RunWith(Cucumber.class)
-@CucumberOptions(format = {"pretty","junit:target/junit.xml"}, snippets = SnippetType.CAMELCASE)
+@CucumberOptions(plugin={"pretty", "html:out"}, snippets = SnippetType.CAMELCASE)
 public class NiceBankTest {
 }

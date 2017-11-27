@@ -32,6 +32,6 @@ public class AtmServer {
     }
 
     public static void main(String[] args) throws Exception {
-        new AtmServer(9988).start();
+        new AtmServer(8080).start();
     }
 }
