@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 484420211,
+  "duration": 582765859,
   "status": "passed"
 });
 formatter.scenario({
@@ -48,7 +48,7 @@ formatter.match({
   "location": "AccountSteps.iHaveDeposited$InMyAccount(Money)"
 });
 formatter.result({
-  "duration": 111646552,
+  "duration": 103467233,
   "status": "passed"
 });
 formatter.match({
@@ -61,7 +61,7 @@ formatter.match({
   "location": "TellerSteps.iWithdraw$(Money)"
 });
 formatter.result({
-  "duration": 4286161585,
+  "duration": 4239082072,
   "status": "passed"
 });
 formatter.match({
@@ -74,7 +74,7 @@ formatter.match({
   "location": "CashSlotSteps.$ShouldBeDispensed(Money)"
 });
 formatter.result({
-  "duration": 2715085,
+  "duration": 2289045,
   "status": "passed"
 });
 formatter.match({
@@ -87,17 +87,16 @@ formatter.match({
   "location": "AccountSteps.theBalanceOfMyAccountShouldBe$(Money)"
 });
 formatter.result({
-  "duration": 670952,
-  "error_message": "java.lang.AssertionError: Incorrect account balance - expected:\u003cnicebank.Money@41c07648\u003e but was:\u003cnicebank.Money@1fe8d51b\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:743)\n\tat org.junit.Assert.assertEquals(Assert.java:118)\n\tat nicebank.AccountSteps.theBalanceOfMyAccountShouldBe$(AccountSteps.java:36)\n\tat ✽.And the balance of my account should be $80.00(nicebank/cash_withdrawal.feature:8)\n",
-  "status": "failed"
-});
-formatter.after({
-  "duration": 91550813,
+  "duration": 108465,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 2745560928,
+  "duration": 2766014384,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 73613845,
   "status": "passed"
 });
 });
